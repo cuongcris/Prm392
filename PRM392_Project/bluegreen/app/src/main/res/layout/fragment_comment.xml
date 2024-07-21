@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- RecyclerView để hiển thị danh sách bình luận -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Nhập bình luận -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Write a comment" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendCommentButton"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button_background2"
+            android:textColor="@color/white"
+            android:text="Send" />
+
+    </LinearLayout>
+</LinearLayout>
